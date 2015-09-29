@@ -1,0 +1,12 @@
+<h1>Add ingredient</h1>
+
+<%= simple_form_for(@cocktail) do |f| %>
+<div class="form-inputs">
+    <%= f.select :ingedient, @ingredients %>
+  </div>
+
+  <div class="form-inputs">
+    <%= f.input :dose %>
+  </div>
+
+<% end %>

@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'doses/show'
+
+  get 'doses/create'
+
+  get 'doses/new'
+
+  get 'doses/destroy'
+
   root 'cocktails#index'
 
+
+  resources :ingredients, only: [:show]
   resources :cocktails do
     resources :doses, only: [:new, :create]
-    resources :ingredients, only: [:show]
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

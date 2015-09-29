@@ -1,3 +1,13 @@
 @import "utilities";
 @import "footer";
 @import "navbar";
+
+body {
+    background-image: url("cocktail-movie.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
